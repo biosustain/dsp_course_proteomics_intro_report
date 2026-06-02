@@ -42,6 +42,9 @@ Based on the genericly created config file base on a directory using `-dir`, you
 customize a copy with descriptions.
 
 ```bash
+# Streamlit report
 vuegen -st_autorun --config report_config_manuel.yaml
+# html report
+vuegen -st_autorun --config report_config_manuel.yaml -rt html
 ```
 
