@@ -1,0 +1,186 @@
+report:
+  title: Report
+  description: 'Example report for the DSP course proteomics introduction based on the data from PXD040621.'
+  graphical_abstract: ''
+  logo: ''
+sections:
+- title: Data
+  description: 'Check the sample quality.'
+  subsections:
+  - title: Clustermap
+    description: ''
+    components:
+    - title: Boxplot Log2 Unnormalized
+      file_path: report/1_data/clustermap/boxplot_log2_unnormalized.png
+      description: ''
+      caption: ''
+      component_type: plot
+      plot_type: static
+    - title: Clustermap Ward
+      file_path: report/1_data/clustermap/clustermap_ward.png
+      description: ''
+      caption: ''
+      component_type: plot
+      plot_type: static
+    - title: Clustermap Ward Median
+      file_path: report/1_data/clustermap/clustermap_ward_median.png
+      description: ''
+      caption: ''
+      component_type: plot
+      plot_type: static
+    - title: Cv Vs Mean
+      file_path: report/1_data/clustermap/cv_vs_mean.json
+      description: ''
+      caption: ''
+      component_type: plot
+      plot_type: plotly
+  - title: Completeness
+    description: ''
+    components:
+    - title: Data Completeness Bar Plot
+      file_path: report/1_data/completeness/data_completeness_bar_plot.png
+      description: ''
+      caption: ''
+      component_type: plot
+      plot_type: static
+    - title: Data Completeness Step Plot
+      file_path: report/1_data/completeness/data_completeness_step_plot.png
+      description: ''
+      caption: ''
+      component_type: plot
+      plot_type: static
+    - title: Proteins
+      file_path: report/1_data/completeness/proteins.csv
+      description: ''
+      caption: ''
+      component_type: dataframe
+      file_format: csv
+      delimiter: ','
+    - title: Proteins Identifiers
+      file_path: report/1_data/completeness/proteins_identifiers.csv
+      description: ''
+      caption: ''
+      component_type: dataframe
+      file_format: csv
+      delimiter: ','
+  components: []
+- title: Differential Regulation
+  description: 'Find differently expressed proteins between the control and the 10 µm sulforaphane condition.'
+  subsections: []
+  components:
+  - title: Volcano Plot
+    file_path: report/2_differential_regulation/0_volcano_plot.json
+    description: ''
+    caption: ''
+    component_type: plot
+    plot_type: plotly
+  - title: Differential Regulation
+    file_path: report/2_differential_regulation/1_differential_regulation.csv
+    description: ''
+    caption: ''
+    component_type: dataframe
+    file_format: csv
+    delimiter: ','
+  - title: Differently Regulated As In Paper
+    file_path: report/2_differential_regulation/1_differently_regulated_as_in_paper.csv
+    description: ''
+    caption: ''
+    component_type: dataframe
+    file_format: csv
+    delimiter: ','
+  - title: Highlighted Proteins In Figure3
+    file_path: report/2_differential_regulation/2_highlighted_proteins_in_figure3.csv
+    description: ''
+    caption: ''
+    component_type: dataframe
+    file_format: csv
+    delimiter: ','
+  - title: Data Completeness Per Group Median
+    file_path: report/2_differential_regulation/data_completeness_per_group_median.png
+    description: ''
+    caption: ''
+    component_type: plot
+    plot_type: static
+- title: Maltose Uptake
+  description: 'Analyze the maltose uptake pathway.'
+  subsections: []
+  components:
+  - title: Volcano Plot
+    file_path: report/3_maltose_uptake/0_volcano_plot.json
+    description: ''
+    caption: ''
+    component_type: plot
+    plot_type: plotly
+  - title: Differential Regulation
+    file_path: report/3_maltose_uptake/1_differential_regulation.csv
+    description: ''
+    caption: ''
+    component_type: dataframe
+    file_format: csv
+    delimiter: ','
+  - title: Differently Regulated As In Paper
+    file_path: report/3_maltose_uptake/1_differently_regulated_as_in_paper.csv
+    description: ''
+    caption: ''
+    component_type: dataframe
+    file_format: csv
+    delimiter: ','
+  - title: Highlighted Proteins In Figure3
+    file_path: report/3_maltose_uptake/2_highlighted_proteins_in_figure3.csv
+    description: ''
+    caption: ''
+    component_type: dataframe
+    file_format: csv
+    delimiter: ','
+  - title: Highlighted Proteins In Figure3 Intensities
+    file_path: report/3_maltose_uptake/3_highlighted_proteins_in_figure3_intensities.csv
+    description: ''
+    caption: ''
+    component_type: dataframe
+    file_format: csv
+    delimiter: ','
+- title: Uniprot Annotations
+  description: ''
+  subsections: []
+  components:
+  - title: Differently Regulated As In Paper
+    file_path: report/uniprot_annotations/1_differently_regulated_as_in_paper.csv
+    description: ''
+    caption: ''
+    component_type: dataframe
+    file_format: csv
+    delimiter: ','
+  - title: Highlighted Proteins In Figure3
+    file_path: report/uniprot_annotations/2_highlighted_proteins_in_figure3.csv
+    description: ''
+    caption: ''
+    component_type: dataframe
+    file_format: csv
+    delimiter: ','
+  - title: Highlighted Proteins In Figure3 Intensities
+    file_path: report/uniprot_annotations/3_highlighted_proteins_in_figure3_intensities.csv
+    description: ''
+    caption: ''
+    component_type: dataframe
+    file_format: csv
+    delimiter: ','
+  - title: Highlighted Proteins In Figure3 Intensities Normalized
+    file_path: report/uniprot_annotations/3_highlighted_proteins_in_figure3_intensities_normalized.csv
+    description: ''
+    caption: ''
+    component_type: dataframe
+    file_format: csv
+    delimiter: ','
+  - title: Annotations
+    file_path: report/uniprot_annotations/annotations.csv
+    description: ''
+    caption: ''
+    component_type: dataframe
+    file_format: csv
+    delimiter: ','
+  - title: Enrichment Analysis
+    file_path: report/uniprot_annotations/enrichment_analysis.json
+    description: ''
+    caption: ''
+    component_type: plot
+    plot_type: plotly
